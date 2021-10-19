@@ -1,10 +1,12 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Button, Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import useAuth from "../Firebase/useAuth";
 import imgLogo from "../images/logo/logo.png";
 import "./Header.css";
 
 const Header = () => {
+  const { user, logOut } = useAuth();
   return (
     <div>
       <Navbar
@@ -19,7 +21,7 @@ const Header = () => {
             <img className="w-50" src={imgLogo} alt="" />
           </Navbar.Brand>
           <Navbar.Toggle />
-          <Navbar.Collapse className="justify-content-end">
+          <Navbar.Collapse className="justify-content-between">
             <Nav.Link as={Link} to="/home">
               Home
             </Nav.Link>
@@ -38,18 +40,19 @@ const Header = () => {
             <Nav.Link as={Link} to="/information">
               Help
             </Nav.Link>
+            <Nav.Link as={Link} to="/login">
+              Login
+            </Nav.Link>
 
-            {/* {user?.email ? (
-              <Button onClick={logOut} variant="light">
-                Logout
-              </Button>
+            {user?.email ? (
+              <Button onClick={logOut}>Logout</Button>
             ) : (
-              <Nav.Link as={Link} to="/login">
-                Login
-              </Nav.Link>
-            )} */}
+              <Nav.Link as={Link} to="/login"></Nav.Link>
+            )}
             <Navbar.Text>
-              Signed in as: <a href="#login">Rohul</a>
+              <a className="singin" href="#login">
+                <span>{user?.displayName}</span>
+              </a>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>
