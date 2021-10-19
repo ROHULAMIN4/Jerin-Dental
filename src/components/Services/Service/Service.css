@@ -1,0 +1,39 @@
+.card-style {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.single-card {
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+.single-card:hover {
+  box-shadow: 20px 0px 0px rgb(17, 188, 255);
+  transition: 0.5s;
+  border-radius: 30px;
+
+  border-left: 20px solid rgb(17, 188, 255);
+  border-top-right-radius: 20%;
+  border-bottom-left-radius: 20%;
+}
+@media only screen and (max-width: 688px) {
+  .card-style {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .card-style {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .card-style {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.img-style {
+  border-radius: 50%;
+  width: 50%;
+  margin: 0 auto;
+}

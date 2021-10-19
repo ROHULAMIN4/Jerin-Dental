@@ -1,0 +1,49 @@
+input {
+  margin: 30px;
+  padding: 15px;
+}
+.contactDisplay {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  margin-top: 30px;
+  height: 50%;
+  width: 100%;
+}
+.anotherContact {
+  width: 300px;
+  border: 1px solid tomato;
+  padding: 10px;
+  box-shadow: -10px -10px 0px #05cdff;
+  margin: 20px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.anotherContact i {
+  font-size: 50px;
+  color: #046e89;
+}
+.contact-style {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width: 688px) {
+  .contact-style {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+  .contact-style {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (min-width: 992px) {
+  .contact-style {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (min-width: 688px) {
+  .contactDisplay {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

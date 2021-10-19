@@ -1,0 +1,10 @@
+.teamImages:hover {
+  width: 100%;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+.teamContainer:hover {
+  box-shadow: -10px 0px 0px rgb(17, 188, 255);
+  border: 3px solid rgb(151, 150, 149);
+  transition: 0.5s;
+}

@@ -1,0 +1,8 @@
+.main-navbar a {
+  color: white;
+  font-size: 30px;
+}
+.main-navbar a:hover {
+  color: tomato;
+  text-decoration: underline;
+}

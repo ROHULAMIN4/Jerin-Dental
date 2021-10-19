@@ -1,0 +1,35 @@
+.single-clm {
+  border: 1px solid green;
+  padding: 15px;
+  border-top-right-radius: 30px;
+  margin: 50px;
+  box-shadow: 10px 10px 0px gray;
+}
+.single-clm:hover {
+  box-shadow: -10px -10px 0px gray;
+  transition: 0.7s;
+  border-bottom-left-radius: 30px;
+}
+.single-clm h3 {
+  color: rgb(199, 108, 92);
+}
+
+.grid-card {
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+.backgroundServices {
+  background-color: rgba(190, 222, 233, 0.637);
+}
+.single-info {
+  border: 1px solid green;
+  padding: 25px;
+  margin: 50px;
+  box-shadow: -10px -10px 0px rgb(112, 227, 238);
+}
+.single-info:hover {
+  border-bottom-right-radius: 50px;
+  border-top-left-radius: 50px;
+  box-shadow: 10px 10px 0px rgb(112, 227, 238);
+  transition: 0.7s;
+}
